@@ -2,8 +2,10 @@
 `git clone https://github.com/M-Nurlan/blog`
 
 # For RBAC and others use migrations
-`yii migrate`
-`yii migrate --migrationPath=@yii/rbac/migrations/`
+```
+yii migrate
+yii migrate --migrationPath=@yii/rbac/migrations/
+```
 
 # Explanation
 This is my project written using Yii2 framework for testing myself and it isn't finished yet. You can find rule `isUser` in `rbacrules` folder and RBAC controller in commands folder. To apply RBAC roles and permissions write `yii rbac/init` in console. I used DbManager and edited `web.php` and `console.php` adding into components:
